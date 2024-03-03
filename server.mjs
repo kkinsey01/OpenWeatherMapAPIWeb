@@ -17,7 +17,6 @@ app.use(express.json());
 app.use(express.static(path.join(__dirname, "/")));
 
 const apiKey = process.env.OPENWEATHERMAP_API_KEY
-console.log(apiKey)
 var city = ''
 var country = ''
 
