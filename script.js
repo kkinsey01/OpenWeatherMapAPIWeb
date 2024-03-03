@@ -30,7 +30,8 @@ function sendData() {
 }
 
 function getData(data) {
-    document.getElementById("dataPlacement").innerHTML = `<p>Temperature is ${data.main.temp}</p>`;
+    document.getElementById("dataPlacement").innerHTML = `<p>Temperature is ${data.main.temp}°F in ${data.name}</p>`;
+    document.getElementById("dataPlacement").innerHTML += `<p>Weather is currently ${data.weather[0].main}</p>`
     console.log('Temperature', data.main.temp);
 }
 document.getElementById("submit").addEventListener("click", sendData);
